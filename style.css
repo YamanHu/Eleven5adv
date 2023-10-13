@@ -1,0 +1,168 @@
+/* Add a global reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2rem; /* Use relative units for font size */
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+    justify-content: space-between;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5rem; /* Use relative units for font size */
+    color: #333;
+    margin: 10px 0;
+}
+
+h3 {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem; /* Use relative units for font size */
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem; /* Use relative units for font size */
+}
+
+.container .section ul li {
+    padding-top: 25px;
+}
+
+.number {
+    color: rgb(243, 67, 67);
+    font-size: 1.2rem; /* Use relative units for font size */
+    font-weight: bold;
+}
+
+.elabroating {
+    color: rgb(56, 130, 250);
+    font-weight: bold;
+}
+.ayam
+{
+    color: rgb(243, 67, 67);
+    font-size: 20px;
+}
+
+.schedule {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.schedule tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+tr td {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.schedule tbody {
+    display: block;
+}
+
+/* Add this rule to remove spacing between cells */
+.schedule tr td {
+    margin: 0;
+    padding: 0;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+tr.no-gap td {
+    line-height: 1;
+    margin: 0;
+}
+/* Add this CSS for responsiveness */
+
+/* For screens smaller than 600px (adjust as needed) */
+@media (max-width: 600px) {
+    .schedule {
+        max-width: 100%; /* Allow the table to take full width */
+        overflow-x: auto; /* Add horizontal scrolling if necessary */
+    }
+
+    .schedule tr {
+        flex-wrap: wrap;
+    }
+
+    tr td {
+        flex: 1 0 50%; /* Two columns per row */
+        text-align: center;
+    }
+
+    .schedule tbody {
+        display: flex;
+        flex-wrap: wrap; /* Rows become vertical on small screens */
+        justify-content: space-between; /* Distribute items evenly */
+    }
+
+    .schedule tr td {
+        margin: 5px; /* Add spacing between cells */
+        padding: 5px;
+    }
+}
